@@ -12,6 +12,11 @@ Projeto desenvolvido para o IEEE, onde o programa analisa determinada imagem e r
 - [Leloana](https://github.com/Leloana)
 - [rafatokairin](https://github.com/rafatokairin)
 
+## Requisitos:
+- Python3
+- pip install opencv-python
+- pip install pywin32 (Terminal)
+
 ---
 
 ## Ponteiro do mouse <a name='ponteiro'></a>
