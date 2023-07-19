@@ -36,4 +36,4 @@ Código-fonte:
 
 O programa inicia a webcam, deste modo o usuário poderá selecionar determinado ponto e então será retornado a cor e o valor RGB obtidos. O programa pode ser realizado indefinidamente, sendo finalizado somente àpos apertar a tecla 's'.
 
-Código fonte: 
+Código-fonte: 
