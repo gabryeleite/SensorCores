@@ -3,7 +3,7 @@
 Projeto desenvolvido para o IEEE, onde o programa analisa determinada imagem e retorna a cor e seu valor RGB
 
 ## Modelos:
-- [Ponteiro do mouse](#ponteiro)
+- [Ponteiro mouse](#ponteiro)
 - [Upload](#upload)
 - [Webcam](#webcam)
 
@@ -20,7 +20,7 @@ Projeto desenvolvido para o IEEE, onde o programa analisa determinada imagem e r
 
 ---
 
-## Ponteiro do mouse <a name='ponteiro'></a>
+## Ponteiro mouse <a name='ponteiro'></a>
 
 Neste modelo o programa utiliza o ponteiro do mouse para selecionar determinado pixel da imagem e então retorna o nome da cor e o valor RGB obtido. Assemelhando-se a um conta gotas.
 
