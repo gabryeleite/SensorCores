@@ -2,6 +2,7 @@ import win32api
 import win32gui
 import win32con 
 import time
+import math
 from BancoCores import Color, cores
 
 hdc = win32gui.GetDC(None)
@@ -25,7 +26,7 @@ while True:
         # percorre as cores do banco de cores
         for i in range(len(cores)):
             # calcula a distância euclidiana entre a cor atual e as cores na lista
-            distancia = pow((R - cores[i].r), 2) + pow((G - cores[i].g), 2) + pow((B - cores[i].b), 2)
+            distancia = math.sqrt(pow((R - cores[i].r), 2) + pow((G - cores[i].g), 2) + pow((B - cores[i].b), 2))
             # verifica se a distância atual é menor que a menor distância encontrada até agora
             if distancia < menorDistancia:
                 melhorCorrespondencia = i
