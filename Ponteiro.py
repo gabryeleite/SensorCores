@@ -1,40 +1,39 @@
 import win32api
 import win32gui
 import time
-import math
-from colors import Color, cores
+from BancoCores import Color, cores
 
-# Abre um handle para a tela do desktop
 hdc = win32gui.GetDC(None)
 
-# Loop infinito
 while True:
-    # Obtem a posicao atual do cursor
+    # obtem a posicao atual do cursor
     cursorPos = win32api.GetCursorPos()
 
-    # Obtem a cor do pixel sob o cursor
+    # obtem a cor do pixel sob o cursor
     cor = win32gui.GetPixel(hdc, cursorPos[0], cursorPos[1])
 
-    # Extrai os componentes R, G e B da cor
+    # extrai os componentes RGB da cor
     r = cor & 0xFF
     g = (cor >> 8) & 0xFF
     b = (cor >> 16) & 0xFF
 
-    # Procura na tabela de cores a correspondencia mais proxima
-    melhorCorrespondencia = 0
-    menorDistancia = 256 * 256 * 256
+    melhorCorrespondencia = 0 # inicializa com 0
+    menorDistancia = 256 * 256 * 256 # inicializa com valor alto
+    # percorre as cores do banco de cores
     for i in range(len(cores)):
+        # calcula a distância euclidiana entre a cor atual e as cores na lista
         distancia = (r - cores[i].r) ** 2 + \
             (g - cores[i].g) ** 2 + (b - cores[i].b) ** 2
+        # verifica se a distância atual é menor que a menor distância encontrada até agora
         if distancia < menorDistancia:
             melhorCorrespondencia = i
             menorDistancia = distancia
 
-    # Imprime o nome da cor mais proxima na tela
+    # imprime o nome da cor e seu valor RGB
     print("Cor: {} ({}, {}, {})".format(
         cores[melhorCorrespondencia].nome, r, g, b))
 
-    # Espera por um pequeno intervalo de tempo antes de repetir
+    # espera pequeno intervalo
     time.sleep(0.5)
 
 # Fecha o handle da tela
