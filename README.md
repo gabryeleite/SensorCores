@@ -15,7 +15,7 @@ Projeto desenvolvido para o IEEE, onde o programa analisa determinada imagem e r
 ## Requisitos:
 - Python3
 - pip install opencv-python
-- pip install pywin32 (Terminal)
+- pip install pywin32 
 - [Banco de cores](https://github.com/gabryeleite/Sensor_Cor/blob/main/BancoCores.py)
 
 ---
