@@ -1,9 +1,9 @@
 # Sensor de Cores
 
-Projeto desenvolvido para o IEEE, onde o programa analisa determinada imagem e retorna a cor e seu valor RGB
+Projeto desenvolvido para o Ramo Estudantil IEEE.
 
 ## Modelos:
-- [Ponteiro mouse](#ponteiro)
+- [Cursor](#cursor)
 - [Upload](#upload)
 - [Webcam](#webcam)
 
@@ -20,20 +20,20 @@ Projeto desenvolvido para o IEEE, onde o programa analisa determinada imagem e r
 
 ---
 
-## Ponteiro mouse <a name='ponteiro'></a>
+## Cursor <a name='cursor'></a>
 
-Neste modelo o programa utiliza o ponteiro do mouse para selecionar determinado pixel da imagem e então retorna o nome da cor e o valor RGB obtido. Assemelhando-se a um conta gotas.
+Neste modelo o programa utiliza o cursor para analisar determinado pixel da imagem, retornando o nome da cor e seu valor RGB, assemelhando-se com um conta gotas.
 
 [Código-fonte](https://github.com/gabryeleite/Sensor_Cor/blob/main/PonteiroClick.py)
 
 ## Upload <a name='upload'></a>
 
-A partir de determinado endereço de imagem passado, o programa analisará seus pixels e retornará a cor predominante calculada e seu valor RGB.
+A partir de determinado endereço de imagem passado, o programa analisará seus pixels e retornará sua cor predominante e seu valor RGB.
 
 [Código-fonte](https://github.com/gabryeleite/Sensor_Cor/blob/main/Upload.py)
 
 ## Webcam <a name='webcam'></a>
 
-O programa inicia a webcam, deste modo o usuário poderá selecionar determinado ponto e então será retornado a cor e o valor RGB obtidos. O programa pode ser realizado indefinidamente, sendo finalizado somente àpos apertar a tecla 's'.
+O programa inicia a webcam, deste modo o usuário poderá selecionar determinado ponto e então será retornado a cor e o valor RGB obtidos. O programa pode ser realizado indefinidamente, sendo finalizado àpos selecionat a tecla 's'.
 
 [Código-fonte](https://github.com/gabryeleite/Sensor_Cor/blob/main/Webcam.py)
